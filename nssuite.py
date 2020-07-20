@@ -30,4 +30,4 @@ async def on_message(message):
 	       		await message.channel.send('Bounced')
 	       	time.sleep(180)# pauses the code for 3 minutes
 
-client.run('NzMzOTg1MDI0NjkyNDUzMzk2.XxSAvw.zreUzVLGUI2sxslb2MiqlcTH8MA')
+client.run('token here')
