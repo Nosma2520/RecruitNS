@@ -33,4 +33,4 @@ async def on_message(message):
 	       		await message.channel.send('Bounced')
 	       	time.sleep(4/3)
 
-client.run('NzMzOTg1MDI0NjkyNDUzMzk2.XxWR_w.uXdo5QXtt4yp0EQA-f9i2xI8ALc')
+client.run('Discord Bot Token')
