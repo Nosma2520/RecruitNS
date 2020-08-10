@@ -32,5 +32,3 @@ async def on_message(message):
 	       	else:
 	       		await message.channel.send('Bounced')
 	       	time.sleep(4/3)
-
-client.run('NzMzOTg1MDI0NjkyNDUzMzk2.XxLG0g.eBGNkJrwfV1mxLIv8A649tKIMX8')
