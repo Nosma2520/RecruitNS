@@ -31,4 +31,4 @@ async def on_message(message):
 	       		time.sleep(180)
 	       	else:
 	       		await message.channel.send('Bounced')
-	       	time.sleep(4/3)
+	       	time.sleep(1.25)
