@@ -28,7 +28,10 @@ async def on_message(message):
 	       	if blockcheck==1:
 	       		get('https://www.nationstates.net/cgi-bin/api.cgi?a=sendTG&client='+client+'&to='+recipient+'&tgid='+tgid+'&key='+key,headers=headers)# then send the telegram
 	       		await message.channel.send(f'Sent to {recipient}')
-	       		time.sleep(180)
+			if message.content.startswith('&stop'):
+				break
+			else:
+	       			time.sleep(180)
 	       	else:
 	       		await message.channel.send('Bounced')
 	       	time.sleep(1.25)
