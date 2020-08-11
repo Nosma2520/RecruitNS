@@ -1,6 +1,6 @@
 
-from bs4 import BeautifulSoup #package for  XML parsing
-import time #package for time operations
+from bs4 import BeautifulSoup
+import time
 import discord
 from requests import*
 
