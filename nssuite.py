@@ -23,7 +23,7 @@ async def on_message(message):
 	       user_agent='{0.content}'.format(message).split(' ')[4]
 	       headers = {'User-Agent': user_agent + " Recruitment Query"}
 	       breakpoint=int('{0.content}'.format(message).split(' ')[5])
-	       while 1==1:
+	       while i!=breakpoint:
 	       	event=str(BeautifulSoup(get('https://www.nationstates.net/cgi-bin/api.cgi?q=happenings;filter=founding', headers=headers).text, 'xml').find('TEXT')).replace('@','').replace('<TEXT>','').replace('</TEXT>','').replace('%','')#open xml file of nation foundings and take the first entry and store it.
 	       	recipient=event.split(' w')[0]
 	       	blockcheck=int(str(BeautifulSoup(get('https://www.nationstates.net/cgi-bin/api.cgi?nation='+recipient+'&q=tgcanrecruit&from=the_allied_republic',headers=headers).text,'xml').find('TGCANRECRUIT')).replace('/','').replace('<TGCANRECRUIT>','')) #makes sure that the telegram won't be blocked
@@ -37,11 +37,6 @@ async def on_message(message):
 	       		else:
 	       			await message.channel.send('Do you wish to continue recruitment(y/n)')
 	       			if message.content.startswith('y'):
-	       				continue
-	       			elif message.content.startswith('n'):
-	       				break
-	       			else:
-	       				await message.channel.send('Invalid Response. Send y to continie or n to stop')
 	       				i=0
 	       	else:
 	       		await message.channel.send('Bounced')
