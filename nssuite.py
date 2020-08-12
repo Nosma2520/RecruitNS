@@ -14,13 +14,15 @@ async def on_ready():
 @client.event
 async def on_message(message):
 	if message.content.startswith('&help'):
-			await message.channel.send('\tThis bot is a NationStates API recruitment client. Only those with express permission can use it.\n\n**Command Structure**\n&recruit {Client Key} {Telegram ID} {Secret Key}{NS Nation}')
+			await message.channel.send('\tThis bot is a NationStates API recruitment client. Only those with express permission can use it.\n\n**Command Structure**\n&recruit {Client Key} {Telegram ID} {Secret Key}{Your NS Nation} {Breakpoint}')
 	if message.content.startswith('&recruit'):
+	       i=0
 	       client='{0.content}'.format(message).split(' ')[1]
 	       tgid='{0.content}'.format(message).split(' ')[2]
 	       key='{0.content}'.format(message).split(' ')[3]
 	       user_agent='{0.content}'.format(message).split(' ')[4]
 	       headers = {'User-Agent': user_agent + " Recruitment Query"}
+	       breakpoint=int('{0.content}'.format(message).split(' ')[5])
 	       while 1==1:
 	       	event=str(BeautifulSoup(get('https://www.nationstates.net/cgi-bin/api.cgi?q=happenings;filter=founding', headers=headers).text, 'xml').find('TEXT')).replace('@','').replace('<TEXT>','').replace('</TEXT>','').replace('%','')#open xml file of nation foundings and take the first entry and store it.
 	       	recipient=event.split(' w')[0]
@@ -28,10 +30,19 @@ async def on_message(message):
 	       	if blockcheck==1:
 	       		get('https://www.nationstates.net/cgi-bin/api.cgi?a=sendTG&client='+client+'&to='+recipient+'&tgid='+tgid+'&key='+key,headers=headers)# then send the telegram
 	       		await message.channel.send(f'Sent to {recipient}')
-			if message.content.startswith('&stop'):
-				break
-			else:
+	       		i+=1
+	       		if i!=breakpoint:
 	       			time.sleep(180)
+	       			continue
+	       		else:
+	       			await message.channel.send('Do you wish to continue recruitment(y/n)')
+	       			if message.content.startswith('y'):
+	       				continue
+	       			elif message.content.startswith('n'):
+	       				break
+	       			else:
+	       				await message.channel.send('Invalid Response. Send y to continie or n to stop')
+	       				i=0
 	       	else:
 	       		await message.channel.send('Bounced')
-	       	time.sleep(1.25)
+	       		time.sleep(1.25)
