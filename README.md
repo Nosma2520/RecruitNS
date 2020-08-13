@@ -5,5 +5,5 @@ This is a Discord Bot that is a NationStates API Recruitment Telegram Client.
 
 ### Command
 <ul>
-<li>&recruit {API Client Key} {Telegram ID} {Secret Key} {Your NationStates Nation's Name} {Breakpoint} </li>
+<li>&recruit {API Client Key} {Telegram ID} {Secret Key} {Your NationStates Nation's Name} {# of Telegrams you want to send} </li>
 </ul>
