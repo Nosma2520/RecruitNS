@@ -35,9 +35,7 @@ async def on_message(message):
 	       			time.sleep(180)
 	       			continue
 	       		else:
-	       			await message.channel.send('Do you wish to continue recruitment(y/n)')
-	       			if message.content.startswith('y'):
-	       				i=0
+	       			await message.channel.send('Complete')
 	       	else:
 	       		await message.channel.send('Bounced')
 	       		time.sleep(1.25)
