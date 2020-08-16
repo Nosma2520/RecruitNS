@@ -17,8 +17,9 @@ RecruitNS is an open source project that was started in July 2020. It was design
 - Requires its own dedicated channel
 
 ### Donations
-Please donate money so that I can continue to host this bot. You can use this [link](https://cash.app/$Nosma1) or scan this photo
+Please donate money so that I can continue to host this bot. You can use this [link](https://cash.app/$Nosma1) or scan the photo below
 
+<img src="7ae82e29cb827cea3fd7400189a85005d00ca2175f8776b11e218a9e68373bb4.png"></img>
 
 ### Support or Contact
 
