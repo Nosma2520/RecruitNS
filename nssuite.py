@@ -26,7 +26,7 @@ async def on_message(message):
 		user_agent = '{0.content}'.format(message).split(' ')[4]
 		headers = {'User-Agent': user_agent + " Recruitment Query"}
 		breakpoint = int('{0.content}'.format(message).split(' ')[5])
-		reg='{0.content}'.format(message).split(' ')
+		reg='{0.content}'.format(message).split(' ')[6]
 		while i != breakpoint:
 			event = str(
 			    BeautifulSoup(
