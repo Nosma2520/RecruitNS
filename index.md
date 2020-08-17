@@ -1,3 +1,4 @@
+<head><script data-ad-client="ca-pub-9020071385931526" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></head>
 ## Welcome to RecruitNS
 
 RecruitNS is an open source project that was started in July 2020. It was designed with user convenience in mind and the fact that a large number of regions in NationStates use Discord for most of their official business. Now API recruitment is something they can add to that list with only one simple command.
