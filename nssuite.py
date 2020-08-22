@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup
 import time
 import discord
-from requests import *
+from requests import get
 
 client = discord.Client()
 
