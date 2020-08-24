@@ -30,5 +30,5 @@ Please donate money so that I can continue to host this bot. You can use this [l
 
 ### Support or Contact
 
-Having trouble with the bot? [Telegram Fultzan for support](https://www.nationstates.net) or DM me @Nosma#5939 and I’ll help you sort it out or you can join the [official discord support server.](https://discord.gg/46qpGSV)
+Having trouble with the bot? [Telegram Fultzan for support](https://www.nationstates.net/nation=fultzan) or DM me @Nosma#5939 and I’ll help you sort it out or you can join the [official discord support server.](https://discord.gg/46qpGSV)
 
