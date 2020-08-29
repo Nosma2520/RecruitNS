@@ -23,7 +23,7 @@ Ex.
 - Requires its own dedicated channel
 
 ### Donations
-Please donate money so that I can continue to host this bot. You can use this [link](https://cash.app/$Nosma1) or scan either of the photos below
+Please donate money so that I can afford to a more stable hosting solution. You can use this [link](https://cash.app/$Nosma1) or scan either of the photos below
 
 <img src="7ae82e29cb827cea3fd7400189a85005d00ca2175f8776b11e218a9e68373bb4.png">
 <img src="Capture+_2020-08-22-05-20-21.png">
