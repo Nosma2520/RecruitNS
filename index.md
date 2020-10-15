@@ -21,7 +21,8 @@ Ex.
 
 <b>Disadvantages</b>
 - Requires its own dedicated channel
-
+### Add Bot to Your Server
+[Click this link to add RecruitNS to your server.](https://discord.com/api/oauth2/authorize?client_id=733985024692453396&permissions=11264&scope=bot)
 ### Donations
 Please donate money so that I can afford to a more stable hosting solution. You can use this [link](https://cash.app/$Nosma1) or scan either of the photos below
 
@@ -30,5 +31,5 @@ Please donate money so that I can afford to a more stable hosting solution. You 
 
 ### Support or Contact
 
-Having trouble with the bot? [Telegram Fultzan for support](https://www.nationstates.net/nation=fultzan) or DM me @Nosma#5939 and I’ll help you sort it out or you can join the [official discord support server.](https://discord.gg/46qpGSV)
+Having trouble with the bot? DM me @Nosma#5939 and I’ll help you sort it out or you can join the [official discord support server.](https://discord.gg/46qpGSV)
 
