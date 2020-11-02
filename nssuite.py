@@ -1,8 +1,14 @@
 from bs4 import BeautifulSoup
 import time
 import discord
-from requests import get
+from requests import *
+import lxml
+import os
+from dotenv import *
 
+
+load_dotenv()
+token = os.getenv('DISCORD_TOKEN')
 client = discord.Client()
 
 
@@ -64,3 +70,4 @@ async def on_message(message):
 				time.sleep(1.25)
 				
 
+client.run(token)
