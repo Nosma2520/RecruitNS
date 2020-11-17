@@ -4,14 +4,11 @@ RecruitNS is an open source project that was started in July 2020. It was design
 
 ### Command
 ```
-&recruit {Client Key} {Telegram ID} {Secret Key} {Your NationStates Nation} {# of Telegrams} {Your Region}
+&recruit 
 ```
-For your NS nation and NS region enter it as all lowercase and use underscores to replace spaces.
+For your, NS region enter it as all lowercase and use underscores to replace spaces.
 
-Ex. 
-```
-&recruit a0000p0i 1234567 a11111a1111 example_nation 100000 test_region 
-```
+
 ### Advantages & Disadvantages
 <b>Advantages</b>
 - No Download
