@@ -5,7 +5,7 @@ import aiohttp
 from bs4 import BeautifulSoup
 import discord
 from discord.ext import commands
-import lxml
+
 
 intents = discord.Intents.default()
 
