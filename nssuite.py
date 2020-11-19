@@ -1,9 +1,8 @@
 from bs4 import BeautifulSoup
 import time
 import discord
-from requests import *
-from webserver import keep_alive
-import lxml
+from requests import get
+
 
 client = discord.Client()
 
@@ -66,4 +65,4 @@ async def on_message(message):
 				time.sleep(1.25)
 				
 
-keep_alive()
+
